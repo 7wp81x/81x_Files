@@ -106,7 +106,7 @@
     "ngrok": {
         "name":"Ngrok",
         "packages": "",
-        "cmd": "wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz -O ngrok.tgz && tar xvzf ngrok.tgz -C $PREFIX/bin/ && rm ngrok.tgz",
+        "cmd": "wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz -O ngrok.tgz && tar xvzf ngrok.tgz -C $PREFIX/bin/ && rm ngrok.tgz && chmod 777 $PREFIX/bin/ngrok",
         "des": "Port forwarding"
     }
 }
