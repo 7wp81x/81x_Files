@@ -92,7 +92,7 @@
     "hashbuster": {
         "name":"HashBuster",
         "packages":[],
-        "cmd": "wget -q --show-progress https://raw.githubusercontent.com/s0md3v/Hash-Buster/master/hash.py -O $PREFIX/bin/buster && chmod 777 $PREFIX/bin/buster",
+        "cmd": "wget -q --show-progress https://raw.githubusercontent.com/s0md3v/Hash-Buster/master/hash.py -O $PREFIX/bin/hashbuster && chmod 777 $PREFIX/bin/hashbuster",
         "des": "Check hash if it's cracked via various sources."
     },
     
@@ -107,6 +107,6 @@
         "name":"Ngrok",
         "packages": "",
         "cmd": "wget -q --show-progress https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz -O ngrok.tgz && tar xvzf ngrok.tgz -C $PREFIX/bin/ && rm ngrok.tgz && chmod 777 $PREFIX/bin/ngrok",
-        "des": "Port forwarding"
+        "des": "tool that allows developers to expose a local server to the internet through a secure tunnel."
     }
 }
