@@ -43,7 +43,7 @@
         "packages": [
             "libc++","libnl","libpcap","libsqlite","openssl","pcre","zlib"
         ],
-        "cmd": "wget 'https://github.com/7wp81x/81x_Files/blob/main/Others/Aircrack/aircrack-ng_3_1.7_$(uname -m).deb?raw=true' -O aircrack.deb && dpkg -i aircrack.deb",
+        "cmd": "wget -q --show-progress 'https://github.com/7wp81x/81x_Files/blob/main/Others/Aircrack/aircrack-ng_3_1.7_$(uname -m).deb?raw=true' -O aircrack.deb && dpkg -i aircrack.deb",
         "des": "Use for cracking wireless network (cap/pcaps)"
     },
     
@@ -57,7 +57,7 @@
     "maskphish": {
         "name":"MaskPhish",
         "packages": [],
-        "cmd": "wget https://raw.githubusercontent.com/jaykali/maskphish/master/maskphish.sh -O $PREFIX/bin/maskphish && chmod 777 $PREFIX/bin/maskphish",
+        "cmd": "wget -q --show-progress https://raw.githubusercontent.com/jaykali/maskphish/master/maskphish.sh -O $PREFIX/bin/maskphish && chmod 777 $PREFIX/bin/maskphish",
         "des": "Masking phishing urls."
     },
     
@@ -92,21 +92,21 @@
     "hashbuster": {
         "name":"HashBuster",
         "packages":[],
-        "cmd": "wget https://raw.githubusercontent.com/s0md3v/Hash-Buster/master/hash.py -O $PREFIX/bin/buster && chmod 777 $PREFIX/bin/buster",
+        "cmd": "wget -q --show-progress https://raw.githubusercontent.com/s0md3v/Hash-Buster/master/hash.py -O $PREFIX/bin/buster && chmod 777 $PREFIX/bin/buster",
         "des": "Check hash if it's cracked via various sources."
     },
     
     "zphisher": {
         "name":"Zphisher",
         "packages": ["php", "openssl", "openssh"],
-        "cmd": "wget https://github.com/htr-tech/zphisher/releases/download/2.3.5/zphisher_2.3.5_all_termux.deb && dpkg -i zphisher_2.3.5_all_termux.deb && rm zphisher_2.3.5_all_termux.deb",
+        "cmd": "wget -q --show-progress https://github.com/htr-tech/zphisher/releases/download/2.3.5/zphisher_2.3.5_all_termux.deb && dpkg -i zphisher_2.3.5_all_termux.deb && rm zphisher_2.3.5_all_termux.deb",
         "des": "Automated phishing tool that simplifies the process of creating phishing attacks to capture sensitive information like login credentials."
     },
     
     "ngrok": {
         "name":"Ngrok",
         "packages": "",
-        "cmd": "wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz -O ngrok.tgz && tar xvzf ngrok.tgz -C $PREFIX/bin/ && rm ngrok.tgz && chmod 777 $PREFIX/bin/ngrok",
+        "cmd": "wget -q --show-progress https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz -O ngrok.tgz && tar xvzf ngrok.tgz -C $PREFIX/bin/ && rm ngrok.tgz && chmod 777 $PREFIX/bin/ngrok",
         "des": "Port forwarding"
     }
 }
